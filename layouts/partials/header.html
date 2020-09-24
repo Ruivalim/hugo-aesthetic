@@ -1,0 +1,23 @@
+{{ if (isset .Site.Menus "main") }}
+<div class="container">
+	<nav id="navbar">
+		<div class="w-50">
+			<a href="/" class="home-menu">
+				{{ .Site.Title }}
+			</a>
+		</div>
+		<div class="w-50 right">
+			{{ range .Site.Menus.main }}
+				<a class="menu-item" href="{{ .URL }}">
+					{{ if .Pre }}
+						{{ $icon := .Pre | safeHTML }}
+						{{ $icon }}
+					{{ end }}
+					{{ $text := print .Name | safeHTML }}
+					{{ $text }}
+				</a>
+			{{ end }}
+		</div>
+	</nav>
+</div>
+{{ end }}

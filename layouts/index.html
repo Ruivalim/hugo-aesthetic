@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div id="mainContainer">
+	<div id="profile">
+		{{ if (isset .Site.Params "profile_pic") }}
+			<img id="profilePic" src="{{ .Site.Params.profile_pic }}" alt="{{ .Site.Title }}" />
+		{{ end }}
+		<h1>{{ .Site.Title }}</h1>
+		<h3>{{ $.Site.Params.subtitle }}</h3>
+		<div id="iconsContainer">
+			{{ if (isset .Site.Params "linkedin") }}
+				<a href="{{ .Site.Params.linkedin }}"><i class="fab fa-linkedin"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "github") }}
+				<a href="{{ .Site.Params.github }}"><i class="fab fa-github-square"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "stackoverflow") }}
+				<a href="{{ .Site.Params.github }}"><i class="fab fa-github-stack-overflow"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "twitter") }}
+				<a href="{{ .Site.Params.twitter }}"><i class="fab fa-twitter"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "facebook") }}
+				<a href="{{ .Site.Params.facebook }}"><i class="fab fa-facebook-square"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "behance") }}
+				<a href="{{ .Site.Params.behance }}"><i class="fab fa-behance-square"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "instagram") }}
+				<a href="{{ .Site.Params.instagram }}"><i class="fab fa-instagram-square"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "medium") }}
+				<a href="{{ .Site.Params.medium }}"><i class="fab fa-medium"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "youtube") }}
+				<a href="{{ .Site.Params.youtube }}"><i class="fab fa-youtube-square"></i></a>
+			{{ end }}
+			{{ if (isset .Site.Params "mail") }}
+				<a href="mailto:{{ .Site.Params.mail }}"><i class="fas fa-envelope"></i></a>
+			{{ end }}
+		</div>
+	</div>
+</div>
+{{ end }}

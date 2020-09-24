@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../webfonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../webfonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: "Roboto";
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #202020;
+	color: #f2f2f2;
+}
+
+a{
+	color: #afafaf;
+	font-weight: bold;
+}
+
+a.no-decoration{
+	text-decoration: none;
+}
+
+a.clean{
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.summary{
+	text-align: justify;
+}
+
+.container{
+	margin-right: auto;
+	margin-left:  auto;
+	max-width: 960px;
+	padding-right: 10px;
+	padding-left:  10px;
+	overflow: auto;
+}
+
+.content{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.w-50{
+	width: 50%;
+	float: left;
+}
+
+.right{
+	text-align: right;
+}
+
+#navbar{
+	padding-top: 25px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.home-menu{
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.menu-item{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#mainContainer{
+	min-height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#profile{
+	max-width: 600px;
+	text-align: center;
+}
+
+#profilePic{
+	border-radius: 50%;
+	border: 5px solid #f2f2f2;
+	width: 180px;
+}
+
+#iconsContainer{
+	margin-top: 15px;
+}
+
+#iconsContainer a{
+	font-size: 35px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+h1, h3{
+	margin: 0;
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+	font-size: 13px
+}

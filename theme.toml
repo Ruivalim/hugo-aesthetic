@@ -1,0 +1,20 @@
+name = "Aesthetic"
+license = "MIT"
+licenselink = "https://github.com/Ruivalim/hugo-aesthetic/blob/master/LICENSE.md"
+description = "A simple and elegant template for Hugo"
+homepage = "https://github.com/Ruivalim/hugo-aesthetic"
+tags = [
+  "blog",
+  "minimal",
+  "minimalist",
+  "responsive",
+  "simple",
+  "clean",
+  "personal"
+]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Rui Valim Jr."
+  homepage = "https://ruivalim.com.br"
